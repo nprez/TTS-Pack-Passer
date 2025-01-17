@@ -32,6 +32,14 @@ function onload()
     createClickButtons()
 end
 
+function onDestroy()
+    if zonesSetup then
+        destroyObject(zone1)
+        destroyObject(zone2)
+        destroyObject(zone3)
+    end
+end
+
 function createClickButtons()
     self.createButton({
         label='▶', click_function='takeRightPlayer', function_owner=self,
