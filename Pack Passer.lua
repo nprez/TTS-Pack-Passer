@@ -42,20 +42,20 @@ end
 
 function createClickButtons()
     self.createButton({
-        label='▶', click_function='takeRightPlayer', function_owner=self,
-        position={-0.4,1,-0.6}, scale={x=0.25, y=0.25, z=0.25}, rotation={0,180,0}, width=400, height=400, font_size=180, color={r=0, g=64, b=0}
+        label='Take', click_function='takeRightPlayer', function_owner=self,
+        position={-0.4,1,-0.6}, scale={x=0.25, y=0.5, z=0.5}, rotation={0,180,0}, width=420, height=200, font_size=180, color={r=0, g=64, b=0}
     })
     self.createButton({
-        label='◀', click_function='passRightPlayer', function_owner=self,
-        position={-0.4,1,0.6}, scale={x=0.25, y=0.25, z=0.25}, rotation={0,180,0}, width=400, height=400, font_size=180, color={r=64, g=0, b=0}
+        label='Pass', click_function='passRightPlayer', function_owner=self,
+        position={-0.4,1,0.6}, scale={x=0.25, y=0.5, z=0.5}, rotation={0,180,0}, width=420, height=200, font_size=180, color={r=64, g=0, b=0}
     })
     self.createButton({
-        label='◀', click_function='takeLeftPlayer', function_owner=self,
-        position={0.4,1,-0.6}, scale={x=0.25, y=0.25, z=0.25}, rotation={0,180,0}, width=400, height=400, font_size=180, color={r=0, g=64, b=0}
+        label='Take', click_function='takeLeftPlayer', function_owner=self,
+        position={0.4,1,-0.6}, scale={x=0.25, y=0.5, z=0.5}, rotation={0,180,0}, width=420, height=200, font_size=180, color={r=0, g=64, b=0}
     })
     self.createButton({
-        label='▶', click_function='passLeftPlayer', function_owner=self,
-        position={0.4,1,0.6}, scale={x=0.25, y=0.25, z=0.25}, rotation={0,180,0}, width=400, height=400, font_size=180, color={r=64, g=0, b=0}
+        label='Pass', click_function='passLeftPlayer', function_owner=self,
+        position={0.4,1,0.6}, scale={x=0.25, y=0.5, z=0.5}, rotation={0,180,0}, width=420, height=200, font_size=180, color={r=64, g=0, b=0}
     })
 end
 function takeRightPlayer(obj, color)
